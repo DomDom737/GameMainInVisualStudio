@@ -1,0 +1,5 @@
+﻿  _main.cpp
+D:\5Klasse\FSST\Game\GameMainInVisualStudio\GameMainInVisualStudio\Bauer.h(148,20): warning C4101: "myMana": Unreferenzierte lokale Variable
+D:\5Klasse\FSST\Game\GameMainInVisualStudio\GameMainInVisualStudio\Bauer.h(148,13): warning C4101: "myLife": Unreferenzierte lokale Variable
+D:\5Klasse\FSST\Game\GameMainInVisualStudio\GameMainInVisualStudio\_main.cpp(39,15): warning C4101: "alteFarbe": Unreferenzierte lokale Variable
+  GameMainInVisualStudio.vcxproj -> D:\5Klasse\FSST\Game\GameMainInVisualStudio\Debug\GameMainInVisualStudio.exe
