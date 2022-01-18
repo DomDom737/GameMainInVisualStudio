@@ -88,13 +88,13 @@ int main(int argc, char *argv[])
 			
 			alle[anzahl-5] = new Bauer();
 			alle[anzahl-4] = new Heiler();
-            alle[anzahl-3] = new Krieger();
-            alle[anzahl-2] = new ManBat();
-			alle[anzahl-1] = new Meinz();
+			alle[anzahl-3] = new Meinz();
+            alle[anzahl-2] = new Krieger();
+            alle[anzahl-1] = new ManBat();
 			//CZAKER-SAGT-ENDE
             //CZAKER-SAGT-ENDE
             
-            int kek = 2;
+            int kek = 3;
     		
     		AusgabeWaehleKrieger();
     	    
