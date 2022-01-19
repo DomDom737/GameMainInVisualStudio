@@ -2611,25 +2611,43 @@ public:
 		{
 			for (int i = 0; i < move; i++)
 			{
-				if (MIDDLE - (x + width) == 0)	//distance to window border
+				if (MIDDLE - (x + width + 2) == 0)	//distance to window border || 2 cuz weird
 				{
 					break;
 				}
 				x++;
-				animateWalk((80 - x) - 16 / 2, distanceToTop, i);
+				if (side == 'l')
+				{
+					animateWalk((80 - x - 1) - 16 / 2, distanceToTop, i);	//-1 cuz weird
+				}
+				else
+				{
+					animateWalk((80 + x) - 16 / 2 + 1, distanceToTop, i);
+				}
 			}
 		}
 		else
 		{
 			for (int i = 0; i < move; i++)
 			{
-				if ((x + width) - ((enemy->x + enemy->width) + 3) == 0)	//distance to enemy || 2 cuz weird
+				if ((x - width) + ((enemy->x - enemy->width)) == 0)
 				{
 					break;
 				}
 				x--;
-				animateWalk((80 - x) - 16 / 2, distanceToTop, i);
+				if (side == 'l')
+				{
+					animateWalk((80 - x - 1) - 16 / 2, distanceToTop, i);	//-1 cuz weird
+				}
+				else
+				{
+					animateWalk((80 + x) - 16 / 2 + 1, distanceToTop, i);
+				}
 			}
+		}
+		if (side == 'l')
+		{
+			x++;
 		}
 		Show();
 	}
