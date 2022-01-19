@@ -2611,7 +2611,7 @@ public:
 		{
 			for (int i = 0; i < move; i++)
 			{
-				if (MIDDLE - (x + width + 2) == 0)	//distance to window border || 2 cuz weird penis
+				if (MIDDLE - (x + width + 2) == 0)	//distance to window border || 2 cuz weird
 				{
 					break;
 				}
