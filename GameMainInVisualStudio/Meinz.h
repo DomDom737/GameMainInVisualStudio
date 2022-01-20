@@ -2582,7 +2582,7 @@ public:
 		if(side == 'l')
 		{
 			//Character on the left (facing right)
-			drawCharacter((80 - x) - 16 / 2, distanceToTop);	//80 = 160/2 -> 160 = console width || 16/2 character width / 2 -> fixes goto offset
+			drawCharacter((80 - x - 1) - 16 / 2, distanceToTop);	//80 = 160/2 -> 160 = console width || 16/2 character width / 2 -> fixes goto offset
 		}
 		else
 		{
@@ -2596,7 +2596,7 @@ public:
 		if(side == 'l')
 		{
 			//Character on the left (facing right)
-			clearCharacter((80 - x) - 16 / 2, distanceToTop);	//80 = 160/2 -> 160 = console width || 16/2 character width / 2 -> fixes goto offset
+			clearCharacter((80 - x - 1) - 16 / 2, distanceToTop);	//80 = 160/2 -> 160 = console width || 16/2 character width / 2 -> fixes goto offset
 		}
 		else
 		{
@@ -2644,13 +2644,6 @@ public:
 				{
 					animateWalk((80 + x) - 16 / 2 + 1, distanceToTop, i);
 				}
-			}
-		}
-		if (side == 'l')
-		{
-			if (MIDDLE - (x + width + 2) != 0)	//distance to window border || 2 cuz weird
-			{
-				x++;
 			}
 		}
 		Show();
