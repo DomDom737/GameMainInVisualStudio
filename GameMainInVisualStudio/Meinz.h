@@ -2572,8 +2572,9 @@ public:
 		life	=	MAX_LIFE;
 		damage	= 	STD_DAMAGE;
 		armor	= 	STD_DAMAGE/2;
-		width	=	9;
+		width	=	10;
 		move	=	14;
+		block	=	0;
 	}
 	
 	void Show()
@@ -2630,7 +2631,7 @@ public:
 		{
 			for (int i = 0; i < move; i++)
 			{
-				if ((x - width) + ((enemy->x - enemy->width)) == 0)
+				if ((x - width) + ((enemy->x - enemy->width)) == 0)	//Distance to enemy
 				{
 					break;
 				}
@@ -2647,7 +2648,10 @@ public:
 		}
 		if (side == 'l')
 		{
-			x++;
+			if (MIDDLE - (x + width + 2) != 0)	//distance to window border || 2 cuz weird
+			{
+				x++;
+			}
 		}
 		Show();
 	}
