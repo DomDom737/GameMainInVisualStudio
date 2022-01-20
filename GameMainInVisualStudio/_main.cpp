@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 			//CZAKER-SAGT-ENDE
             //CZAKER-SAGT-ENDE
             
-            int kek = 4;
+            int kek = 3;
     		
     		AusgabeWaehleKrieger();
     	    

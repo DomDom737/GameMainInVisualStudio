@@ -2553,11 +2553,6 @@ private:
 			return;
 		}
 	}
-
-	void animateReverseWalk(unsigned short x, unsigned short y, char direction)
-	{
-
-	}
 	
 protected:
 	int  armor;		// reduces the damage Heros gets
@@ -2572,9 +2567,10 @@ public:
 		life	=	MAX_LIFE;
 		damage	= 	STD_DAMAGE;
 		armor	= 	STD_DAMAGE/2;
-		width	=	10;
+		width	=	9;
 		move	=	14;
 		block	=	0;
+		range	=	160;
 	}
 	
 	void Show()
@@ -2678,7 +2674,16 @@ public:
 	
 	void ShowAttack()
 	{
-		//Attack animation goes here
+		if ((x - width) + ((enemy->x - enemy->width)) <= (width * 2 + 1) * 2)	//doppelte breite von character (muss wahrscheinlich angepasst werden)
+		{
+			//punch animation (evtl. mit walk to enemy)
+			//Don't forget damage modifier
+		}
+		else
+		{
+			//shoot animation
+			//Don't forget damage modifier
+		}
 	}
 	
 	int BeAttacked()
