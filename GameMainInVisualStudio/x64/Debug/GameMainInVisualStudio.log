@@ -1,0 +1,6 @@
+﻿  _main.cpp
+C:\Users\Dominik\Downloads\GameMainInVisualStudio\GameMainInVisualStudio\Bauer.h(148,20): warning C4101: 'myMana': unreferenced local variable
+C:\Users\Dominik\Downloads\GameMainInVisualStudio\GameMainInVisualStudio\Bauer.h(148,13): warning C4101: 'myLife': unreferenced local variable
+C:\Users\Dominik\Downloads\GameMainInVisualStudio\GameMainInVisualStudio\Bauer.h(467,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Dominik\Downloads\GameMainInVisualStudio\GameMainInVisualStudio\_main.cpp(39,15): warning C4101: 'alteFarbe': unreferenced local variable
+  GameMainInVisualStudio.vcxproj -> C:\Users\Dominik\Downloads\GameMainInVisualStudio\x64\Debug\GameMainInVisualStudio.exe

@@ -79,7 +79,7 @@ public:
 		shield     =  0;
 		damage     = STD_DAMAGE;
 		range      = 30;
-		move       = MAX_MOVE;
+		move	   = MAX_MOVE;
 		
 		bodyCol    = LIGHTGREEN;
 		headCol    = BROWN;
