@@ -33,6 +33,24 @@
     <ClInclude Include="ManBat.h">
       <Filter>Quelldateien</Filter>
     </ClInclude>
+    <ClInclude Include="r2d2.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="r2d2_base.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="r2d2_death.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="r2d2_flamethrower.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="r2d2_move.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="r2d2_taser.h">
+      <Filter>Quelldateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_main.cpp">

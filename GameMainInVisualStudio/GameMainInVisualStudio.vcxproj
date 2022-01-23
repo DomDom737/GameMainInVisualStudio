@@ -144,6 +144,12 @@
     <ClInclude Include="Krieger.h" />
     <ClInclude Include="ManBat.h" />
     <ClInclude Include="Meinz.h" />
+    <ClInclude Include="r2d2.h" />
+    <ClInclude Include="r2d2_base.h" />
+    <ClInclude Include="r2d2_death.h" />
+    <ClInclude Include="r2d2_flamethrower.h" />
+    <ClInclude Include="r2d2_move.h" />
+    <ClInclude Include="r2d2_taser.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_main.cpp" />

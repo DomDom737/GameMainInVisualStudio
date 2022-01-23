@@ -8,6 +8,7 @@
 #include "Krieger.h"
 #include "ManBat.h"
 #include "Meinz.h"
+#include "r2d2.h"
 
 // CZAKER SAGT #include "Hero.h" // for each Hero
 
@@ -64,7 +65,7 @@ int main(int argc, char *argv[])
     //CZAKER|  die ANZAHL aller KRIEGER in "anzahl" speichern  |CZAKER
     //CZAKER|                                                  |CZAKER
     //CZAKER+-SAGT-++-CZAKER-SAGT-+-CZAKER-SAGT-+-CZAKER-SAGT--+CZAKER
-    const int anzahl = 5;
+    const int anzahl = 6;
     //CZAKER-SAGT-ENDE
     //CZAKER-SAGT-ENDE
 
@@ -86,11 +87,13 @@ int main(int argc, char *argv[])
             //CZAKER|                                                |CZAKER
             //CZAKER+-SAGT---CZAKER-SAGT---CZAKER-SAGT---CZAKER-SAGT-+CZAKER
 			
-			alle[anzahl-5] = new Bauer();
-			alle[anzahl-4] = new Heiler();
-            alle[anzahl-3] = new Krieger();
-            alle[anzahl-2] = new ManBat();
-			alle[anzahl-1] = new Meinz();
+			alle[anzahl-6] = new Bauer();
+			alle[anzahl-5] = new Heiler();
+            alle[anzahl-4] = new Krieger();
+            alle[anzahl-3] = new ManBat();
+			alle[anzahl-2] = new Meinz();
+            alle[anzahl - 1] = new r2d2();
+
 			//CZAKER-SAGT-ENDE
             //CZAKER-SAGT-ENDE
             
