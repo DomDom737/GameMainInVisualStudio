@@ -16083,48 +16083,7 @@ void animatedeath(unsigned short x, unsigned short y)
 	animatedeath15(x, y);
 	Sleep(100);
 	clearAnimatedeath15(x, y);
-	animatedeath14(x, y);
-	Sleep(100);
-	clearAnimatedeath14(x, y);
-	animatedeath13(x, y);
-	Sleep(100);
-	clearAnimatedeath13(x, y);
-	animatedeath12(x, y);
-	Sleep(100);
-	clearAnimatedeath12(x, y);
-	animatedeath11(x, y);
-	Sleep(100);
-	clearAnimatedeath11(x, y);
-	animatedeath10(x, y);
-	Sleep(100);
-	clearAnimatedeath10(x, y);
-	animatedeath9(x, y);
-	Sleep(100);
-	clearAnimatedeath9(x, y);
-	animatedeath8(x, y);
-	Sleep(100);
-	clearAnimatedeath8(x, y);
-	animatedeath7(x, y);
-	Sleep(100);
-	clearAnimatedeath7(x, y);
-	animatedeath6(x, y);
-	Sleep(100);
-	clearAnimatedeath6(x, y);
-	animatedeath5(x, y);
-	Sleep(100);
-	clearAnimatedeath5(x, y);
-	animatedeath4(x, y);
-	Sleep(100);
-	clearAnimatedeath4(x, y);
-	animatedeath3(x, y);
-	Sleep(100);
-	clearAnimatedeath3(x, y);
-	animatedeath2(x, y);
-	Sleep(100);
-	clearAnimatedeath2(x, y);
-	animatedeath1(x, y);
-	Sleep(100);
-	clearAnimatedeath1(x, y);
+	
 }
 
 void animateReversedeath(unsigned short x, unsigned short y)
@@ -16180,47 +16139,6 @@ void animateReversedeath(unsigned short x, unsigned short y)
 	animateReversedeath15(x, y);
 	Sleep(100);
 	clearAnimateReversedeath15(x, y);
-	animateReversedeath14(x, y);
-	Sleep(100);
-	clearAnimateReversedeath14(x, y);
-	animateReversedeath13(x, y);
-	Sleep(100);
-	clearAnimateReversedeath13(x, y);
-	animateReversedeath12(x, y);
-	Sleep(100);
-	clearAnimateReversedeath12(x, y);
-	animateReversedeath11(x, y);
-	Sleep(100);
-	clearAnimateReversedeath11(x, y);
-	animateReversedeath10(x, y);
-	Sleep(100);
-	clearAnimateReversedeath10(x, y);
-	animateReversedeath9(x, y);
-	Sleep(100);
-	clearAnimateReversedeath9(x, y);
-	animateReversedeath8(x, y);
-	Sleep(100);
-	clearAnimateReversedeath8(x, y);
-	animateReversedeath7(x, y);
-	Sleep(100);
-	clearAnimateReversedeath7(x, y);
-	animateReversedeath6(x, y);
-	Sleep(100);
-	clearAnimateReversedeath6(x, y);
-	animateReversedeath5(x, y);
-	Sleep(100);
-	clearAnimateReversedeath5(x, y);
-	animateReversedeath4(x, y);
-	Sleep(100);
-	clearAnimateReversedeath4(x, y);
-	animateReversedeath3(x, y);
-	Sleep(100);
-	clearAnimateReversedeath3(x, y);
-	animateReversedeath2(x, y);
-	Sleep(100);
-	clearAnimateReversedeath2(x, y);
-	animateReversedeath1(x, y);
-	Sleep(100);
-	clearAnimateReversedeath1(x, y);
+	
 }
 

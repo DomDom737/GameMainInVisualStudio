@@ -1,6 +1,6 @@
 #ifndef R2D2_H
 #define R2D2_H
-// Autor: Ortner Dominik
+
 #include "Bauer.h"
 #include <iostream>
 #include <windows.h>
@@ -36,13 +36,13 @@ public:
 		strcpy(heroName, "R2D2");
 
 		life = MAX_LIFE;
-		life = 1;
-		damage = STD_DAMAGE;
-		armor = STD_DAMAGE / 2;
+		damage = int(STD_DAMAGE * 1.5);
+		armor = int(STD_DAMAGE*0.5);
 		width = 17;
-		move = 14;
-		block = 0;
-		range = 50000;
+		move = 1;
+		block = 50;
+		range = 500000000;
+		mana = MAX_MANA;
 	}
 
 	void Show()
@@ -64,7 +64,7 @@ public:
 		if (side == 'l')
 		{
 			//Character on the left (facing right)
-			clearCharacter(Xcoord(), distanceToTop-1);	//80 = 160/2 -> 160 = console width || 16/2 character width / 2 -> fixes goto offset
+			clearCharacter(Xcoord(), distanceToTop-1);	
 		}
 		else
 		{
@@ -87,25 +87,26 @@ public:
 					animatemove0(Xcoord(), distanceToTop-2);	//-1 cuz weird
 					clearAnimatemove0(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
-
+					Sleep(100);
 					x += step;
 
 					animatemove1(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove1(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
-
-
+					Sleep(100);
 					x += step;
 
 					animatemove2(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove2(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
-
-					x += step;
+					
+					
+					Sleep(100);x += step;
 
 					animatemove3(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove3(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
+					Sleep(100);
 
 					x += step;
 
@@ -113,64 +114,64 @@ public:
 					clearAnimatemove4(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
 					animatemove5(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove5(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
 					animatemove6(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove6(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
 				}
 				else
 				{
-					animatemove0(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove0(XcoordReverse(), distanceToTop - 2);
+					animatemove0(XcoordReverse()-10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove0(XcoordReverse()-10, distanceToTop - 2);
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
-					animatemove1(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove1(XcoordReverse(), distanceToTop - 2);
+					animatemove1(XcoordReverse() - 10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove1(XcoordReverse() - 10, distanceToTop - 2);
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
-					animatemove2(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove2(XcoordReverse(), distanceToTop - 2);
+					animatemove2(XcoordReverse() - 10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove2(XcoordReverse() - 10, distanceToTop - 2);
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
-					animatemove3(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove3(XcoordReverse(), distanceToTop - 2);
+					animatemove3(XcoordReverse() - 10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove3(XcoordReverse() - 10, distanceToTop - 2);
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
-					animatemove4(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove4(XcoordReverse(), distanceToTop - 2);
+					animatemove4(XcoordReverse() - 10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove4(XcoordReverse() - 10, distanceToTop - 2);
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
-					animatemove5(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove5(XcoordReverse(), distanceToTop - 2);
+					animatemove5(XcoordReverse() - 10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove5(XcoordReverse() - 10, distanceToTop - 2);
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
-					animatemove6(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove6(XcoordReverse(), distanceToTop - 2);
+					animatemove6(XcoordReverse() - 10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove6(XcoordReverse() - 10, distanceToTop - 2);
 					if (MIDDLE - (x + width + 2) == 0){Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 				}
 			
 		}
@@ -184,87 +185,87 @@ public:
 					animatemove0(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove0(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
-					x -= step;
+					Sleep(100);x -= step;
 
 					animatemove1(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove1(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
 					animatemove2(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove2(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
 					animatemove3(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove3(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
 					animatemove4(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove4(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
 					animatemove5(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove5(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 
 					animatemove6(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					clearAnimatemove6(Xcoord(), distanceToTop - 2);	//-1 cuz weird
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x -= step;
+					Sleep(100);x -= step;
 				}
 				else
 				{
-					animatemove0(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove0(XcoordReverse(), distanceToTop - 2);
+					animatemove0(XcoordReverse()-10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove0(XcoordReverse()-10, distanceToTop - 2);
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
-					animatemove1(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove1(XcoordReverse(), distanceToTop - 2);
+					animatemove1(XcoordReverse()-10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove1(XcoordReverse()-10, distanceToTop - 2);
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
-					animatemove2(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove2(XcoordReverse(), distanceToTop - 2);
+					animatemove2(XcoordReverse()-10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove2(XcoordReverse()-10, distanceToTop - 2);
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
-					animatemove3(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove3(XcoordReverse(), distanceToTop - 2);
+					animatemove3(XcoordReverse()-10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove3(XcoordReverse()-10, distanceToTop - 2);
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
-					animatemove4(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove4(XcoordReverse(), distanceToTop - 2);
+					animatemove4(XcoordReverse()-10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove4(XcoordReverse()-10, distanceToTop - 2);
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
-					animatemove5(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove5(XcoordReverse(), distanceToTop - 2);
+					animatemove5(XcoordReverse()-10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove5(XcoordReverse()-10, distanceToTop - 2);
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 
-					animatemove6(XcoordReverse(), distanceToTop - 2);	//-1 cuz weird
-					clearAnimatemove6(XcoordReverse(), distanceToTop - 2);
+					animatemove6(XcoordReverse()-10, distanceToTop - 2);	//-1 cuz weird
+					clearAnimatemove6(XcoordReverse()-10, distanceToTop - 2);
 					if ((x - width) + ((enemy->x - enemy->width)) == 0) {Show(); return;}
 
-					x += step;
+					Sleep(100);x += step;
 				}
 			}
 		
@@ -275,8 +276,18 @@ public:
 	{
 		//Custom death animation goes here
 		if (life > 0) return;  // still alive
+
+		if (side == 'l')
+		{
+			animatedeath(Xcoord(), distanceToTop - 1-10);
+
+		}
+		else
+		{
+			animateReversedeath(XcoordReverse()-10, distanceToTop - 1-10);
+
+		}
 		
-		animatedeath(Xcoord(), distanceToTop-1-10);
 		
 	}
 	void ClearDeath()
